@@ -14,7 +14,7 @@ Class Produto {
 	//Construtor e destrutor
 		Produto ( string = "", string = "", float = 0.0, float = 0.0, int = 0);
 		~Produto();
-		//métodos para atribuição (set) e retorno (get) de dados.
+		//mÃ©todos para atribuiÃ§Ã£o (set) e retorno (get) de dados.
 		void set_nome(string);
 		string get_nome() const;
 		void set_cor(string);
@@ -32,12 +32,12 @@ Class Produto {
 TECNICAS DE PROGRAMACAO 
 PROFESSOR: MARCUS SALERNO
 GRUPO: David Emanuel Albuquerque dos Santos- Turma 02
-José Vanilson de Brito Júnior - Turma 01
+JosÃ© Vanilson de Brito JÃºnior - Turma 01
 Lameque Dias de Oliveira - Turma 01
-Pedro Henrique Fernandes Macêdo -  Turma 02
+Pedro Henrique Fernandes MacÃªdo -  Turma 02
 Felipe Faustino do Nascimento- Turma 02
-Monitora:Ravânia Luciano Martildes
+Monitora:RavÃ¢nia Luciano Martildes
 PROJETO: LOJA DE INSTRUMENTOS MUSIDOM 
-DESCRIÇÃO: O programa deve realizar diversas funções entre eles, o cadastro de 
+DESCRIÃ‡ÃƒO: O programa deve realizar diversas funÃ§Ãµes entre eles, o cadastro de 
 produto, de cliente, e vendedores, gerenciar o estoque da loja, realizar pedidos
  */
