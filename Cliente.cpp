@@ -1,7 +1,6 @@
-#include "CadastroProjeto_2.h"
+#include "Cliente.h"
 
-Cadastro_cliente::Cadastro_cliente(string nome_completo= " ",string cpf = " ", int contato = 0, string cep = " ", string rua = " ", string bairro = " ", int numero = 0, string complemento = " "){
-
+Cadastro_cliente::Cadastro_cliente(string nome_completo,string cpf,string contato ,string cep , string rua, string bairro , int numero, string complemento){
 	this->nome_completo = nome_completo;
 	this->cpf = cpf;
 	this->contato = contato;
@@ -18,7 +17,7 @@ void Cadastro_cliente::set_nome(string nome_completo){
 void Cadastro_cliente::set_cpf(string cpf){
 	this->cpf = cpf;
 }
-void Cadastro_cliente::set_contato(int contato){
+void Cadastro_cliente::set_contato(string contato){
 	this->contato = contato;
 }
 void Cadastro_cliente::set_cep(string cep){
@@ -44,7 +43,7 @@ string Cadastro_cliente::get_cpf(){
 	return cpf;
 	
 }
-int Cadastro_cliente::get_contato(){
+string Cadastro_cliente::get_contato(){
 	return contato;
 }
 string Cadastro_cliente::get_cep(){
@@ -60,14 +59,14 @@ int  Cadastro_cliente::get_numero(){
 	return numero;
 }
 string Cadastro_cliente::get_complemento(){
-	return complemento
+	return complemento;
 }
 void Cadastro_cliente::get_cliente(){
 	cout << "NOME COMPLETO : " << nome_completo <<endl;
 	cout << "CPF : " << cpf <<endl;
 	cout << "NUMERO PARA CONTATO : " << contato <<endl;
-	cout <<"RUA : " << rua <<endls;
+	cout <<"RUA : " << rua <<endl;
 	cout <<"NUMERO DA CASA/APARTAMENTO : "<<numero<<endl;
 	cout <<"CEP : "<<cep<<endl;
-	cout <<"COMPLEMENTO "<<complemento<<endl;
+	cout <<"COMPLEMENTO: "<<complemento<<endl;
 }
