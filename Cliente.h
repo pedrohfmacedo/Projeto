@@ -1,11 +1,12 @@
-#ifndef CADASTROPROJETO_2_H
-#define CADASTROPROJETO_2_H
+#ifndef CLIENTE_H
+#define CLIENTE_H
 
 class Cadastro_cliente{
 	//Dados da pessoa
 	string nome_completo;
 	string cpf;
-	//Endereço da pessoa
+	string contato;
+	//EndereÃ§o da pessoa
 	string cep;
 	string rua;
 	string bairro;
@@ -13,8 +14,7 @@ class Cadastro_cliente{
 	string complemento;
 public:
 	//Construtor para inicializar a variavel
-	Cadastro_cliente(string nome_completo= " ",string cpf = " ",int numero  = 0, string cep = " ", string rua = " ", string bairro = " ", int numero = 0, string complemento = " ");
-	~Cadastro_cliente();
+	Cadastro_cliente(string = " ",string = " ",string = " ",string = " ", string = " ", string = " ", int = 0, string  = " ");
 	//Metodo para Cadastrar os dados
 	void set_nome(string);
 	void set_cpf(string);
@@ -25,14 +25,15 @@ public:
 	void set_numero(int);
 	void set_complemento(string);
 	//Metodo para impressao dos dados
-	void get_nome();
-	void get_cpf();
-	void get_contato();
-	void get_cep();
-	void get_rua();
-	void get_bairro();
+	string get_nome();
+	string get_cpf();
+	string get_contato();
+	string get_cep();
+	string get_rua();
+	string get_bairro();
 	int  get_numero();
-	void get_complemento();
+	string get_complemento();
+	void get_cliente();
 
 };
 #endif
@@ -40,12 +41,12 @@ public:
 TECNICAS DE PROGRAMACAO 
 PROFESSOR: MARCUS SALERNO
 GRUPO: David Emanuel Albuquerque dos Santos- Turma 02
-José Vanilson de Brito Júnior - Turma 01
+JosÃ© Vanilson de Brito JÃºnior - Turma 01
 Lameque Dias de Oliveira - Turma 01
-Pedro Henrique Fernandes Macêdo -  Turma 02
+Pedro Henrique Fernandes MacÃªdo -  Turma 02
 Felipe Faustino do Nascimento- Turma 02
-Monitora:Ravânia Luciano Martildes
+Monitora:RavÃ¢nia Luciano Martildes
 PROJETO: LOJA DE INSTRUMENTOS MUSIDOM 
-DESCRIÇÃO: O programa deve realizar diversas funções entre eles, o cadastro de 
+DESCRIÃ‡ÃƒO: O programa deve realizar diversas funÃ§Ãµes entre eles, o cadastro de 
 produto, de cliente, e vendedores, gerenciar o estoque da loja, realizar pedidos
  */
